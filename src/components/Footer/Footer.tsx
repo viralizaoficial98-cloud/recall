@@ -22,7 +22,9 @@ export default function Footer() {
               { icon: Instagram, href: SITE_CONFIG.social.instagram },
               { icon: Linkedin, href: SITE_CONFIG.social.linkedin },
               { icon: Youtube, href: SITE_CONFIG.social.youtube },
-            ].map((s, i) => (
+            ]
+              .filter((s) => s.href)
+              .map((s, i) => (
               <a
                 key={i}
                 href={s.href}
