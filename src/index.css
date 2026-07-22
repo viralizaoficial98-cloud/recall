@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+
+  body {
+    @apply bg-white text-brand-black font-sans antialiased;
+    overflow-x: hidden;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-display;
+  }
+}
+
+@layer utilities {
+  .container-x {
+    @apply mx-auto w-full max-w-[1320px] px-5 sm:px-6 lg:px-10;
+  }
+
+  .section-y {
+    @apply py-16 sm:py-20 lg:py-28;
+  }
+
+  .text-gradient-red {
+    @apply bg-gradient-to-r from-brand-red to-brand-red-dark bg-clip-text text-transparent;
+  }
+}
+
+::selection {
+  background-color: #e31e24;
+  color: #fff;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f5f5f5;
+}
+::-webkit-scrollbar-thumb {
+  background: #b8161b;
+  border-radius: 8px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Ken Burns effect for hero slider backgrounds */
+.kenburns > div {
+  animation: kenburns 16s ease-in-out infinite alternate;
+  will-change: transform;
+}
+
+@keyframes kenburns {
+  0% {
+    transform: scale(1) translate(0, 0);
+  }
+  100% {
+    transform: scale(1.14) translate(-1.5%, -1.5%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .kenburns > div {
+    animation: none;
+  }
+}
+
+/* Swiper pagination brand styling */
+.swiper-pagination-bullet {
+  background: #bbbbbb;
+  opacity: 1;
+}
+.swiper-pagination-bullet-active {
+  background: #e31e24;
+}
+

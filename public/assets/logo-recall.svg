@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 260">
+  <rect width="980" height="260" fill="none"/>
+  <circle cx="150" cy="38" r="34" fill="#E31E24" />
+  <path d="M118 38 L178 22 L178 54 Z" fill="#FFFFFF" />
+  <circle cx="204" cy="50" r="28" fill="#1A1A1A" />
+  <path d="M176 50 L236 42 L236 58 Z" fill="#FFFFFF" />
+  <rect x="20" y="66" width="168" height="168" fill="#E31E24" />
+  <path
+    d="M62 100 h56 c26 0 42 14 42 36 c0 18 -10 30 -26 34 l34 46 h-40 l-28 -40 h-10 v40 h-28 z M90 122 v28 h24 c12 0 18 -6 18 -14 c0 -8 -6 -14 -18 -14 z"
+    fill="#FFFFFF"
+    fill-rule="evenodd"
+  />
+  <circle cx="76" cy="196" r="10" fill="#FFFFFF" />
+  <text x="228" y="150" font-family="Montserrat, Arial, sans-serif" font-weight="800" font-size="108" fill="#E31E24" letter-spacing="1">RE-</text>
+  <text x="410" y="150" font-family="Montserrat, Arial, sans-serif" font-weight="800" font-size="108" fill="#1A1A1A" letter-spacing="1">CALL</text>
+  <text x="228" y="196" font-family="Montserrat, Arial, sans-serif" font-weight="700" font-size="30" fill="#1A1A1A" letter-spacing="4">BUSINESS &amp; SERVICES, LDA</text>
+  <line x1="228" y1="222" x2="300" y2="222" stroke="#E31E24" stroke-width="2" />
+  <text x="316" y="230" font-family="Montserrat, Arial, sans-serif" font-weight="600" font-size="22" fill="#E31E24" letter-spacing="5">EVENTOS CORPORATIVOS</text>
+  <line x1="716" y1="222" x2="788" y2="222" stroke="#E31E24" stroke-width="2" />
+</svg>
