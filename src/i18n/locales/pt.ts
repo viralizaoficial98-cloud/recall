@@ -227,7 +227,7 @@ const pt = {
     email: 'E-mail',
     emailValue: 'geral@recallcom.com',
     hours: 'Horário de Funcionamento',
-    hoursValue: 'Segunda a Sexta: 09h00 - 18h00 (provisório)',
+    hoursValue: 'Segunda a Sexta: 08h00 - 17h00',
     social: 'Redes Sociais',
     mapButton: 'Ver Localização',
     quickForm: {

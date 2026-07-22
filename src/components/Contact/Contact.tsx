@@ -38,7 +38,7 @@ export default function Contact() {
     { icon: Instagram, href: SITE_CONFIG.social.instagram, label: 'Instagram' },
     { icon: Linkedin, href: SITE_CONFIG.social.linkedin, label: 'LinkedIn' },
     { icon: Youtube, href: SITE_CONFIG.social.youtube, label: 'YouTube' },
-  ];
+  ].filter((s) => s.href);
 
   return (
     <section id="contactos" className="section-y bg-white">
@@ -69,21 +69,23 @@ export default function Contact() {
               );
             })}
 
-            <div className="flex items-center gap-3 pt-2">
-              <span className="text-sm font-bold text-brand-black">{t('contact.social')}</span>
-              {socials.map((s, i) => (
-                <a
-                  key={i}
-                  href={s.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={s.label}
-                  className="flex h-10 w-10 items-center justify-center rounded-full bg-brand-gray-100 text-brand-black transition-colors hover:bg-brand-red hover:text-white"
-                >
-                  <s.icon size={18} />
-                </a>
-              ))}
-            </div>
+            {socials.length > 0 && (
+              <div className="flex items-center gap-3 pt-2">
+                <span className="text-sm font-bold text-brand-black">{t('contact.social')}</span>
+                {socials.map((s, i) => (
+                  <a
+                    key={i}
+                    href={s.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={s.label}
+                    className="flex h-10 w-10 items-center justify-center rounded-full bg-brand-gray-100 text-brand-black transition-colors hover:bg-brand-red hover:text-white"
+                  >
+                    <s.icon size={18} />
+                  </a>
+                ))}
+              </div>
+            )}
           </motion.div>
 
           <motion.div variants={zoomIn} initial="hidden" whileInView="visible" viewport={viewportOnce} className="space-y-6">

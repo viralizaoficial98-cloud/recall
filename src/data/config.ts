@@ -20,14 +20,14 @@ export const SITE_CONFIG = {
   phone: '+244 921 483 399',
   email: 'geral@recallcom.com',
   address: 'Avenida de Portugal, Ingombota, Luanda, Angola',
-  // TODO: replace with the real Google Maps embed URL
-  mapEmbedUrl:
-    'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15762.0!2d13.2894!3d-8.8383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sIngombota%2C+Luanda!5e0!3m2!1spt!2sao!4v0',
-  mapLink: 'https://maps.google.com/?q=Avenida+de+Portugal,+Ingombota,+Luanda,+Angola',
+  // Generic area embed (Luanda, Ingombota) — replace with the exact pin once the final venue address is confirmed.
+  mapEmbedUrl: 'https://www.google.com/maps?q=Luanda,+Ingombota,+Angola&output=embed',
+  mapLink: 'https://maps.google.com/?q=Luanda,+Ingombota,+Angola',
+  // TODO: fill in once the official social media profiles exist — icons stay hidden until then.
   social: {
-    facebook: 'https://facebook.com/recalleventos',
-    instagram: 'https://instagram.com/recalleventos',
-    linkedin: 'https://linkedin.com/company/recalleventos',
-    youtube: 'https://youtube.com/@recalleventos',
+    facebook: '',
+    instagram: '',
+    linkedin: '',
+    youtube: '',
   },
 };

@@ -229,7 +229,7 @@ const en: Translation = {
     email: 'Email',
     emailValue: 'geral@recallcom.com',
     hours: 'Business Hours',
-    hoursValue: 'Monday to Friday: 9:00 AM - 6:00 PM (placeholder)',
+    hoursValue: 'Monday to Friday: 8:00 AM - 5:00 PM',
     social: 'Social Media',
     mapButton: 'View Location',
     quickForm: {
