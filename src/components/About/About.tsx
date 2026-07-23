@@ -21,7 +21,7 @@ export default function About() {
           <div className="absolute -left-4 -top-4 h-24 w-24 rounded-2xl bg-brand-red/10 sm:-left-6 sm:-top-6 sm:h-32 sm:w-32" />
           <div className="absolute -bottom-4 -right-4 h-16 w-16 rounded-full border-4 border-brand-red/20 sm:-bottom-6 sm:-right-6 sm:h-24 sm:w-24" />
           <img
-            src="/assets/images/about-recall.png"
+            src="/assets/images/about-recall.webp"
             alt={t('about.imageAlt')}
             loading="lazy"
             className="relative z-10 aspect-[4/5] w-full rounded-2xl object-cover shadow-premium"
