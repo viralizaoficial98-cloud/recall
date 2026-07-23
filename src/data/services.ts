@@ -37,6 +37,6 @@ export const services: ServiceItem[] = [
   { id: 'fairs', translationKey: 'fairs', icon: Store, image: '/assets/images/services/service-feiras.webp' },
   { id: 'audiovisual', translationKey: 'audiovisual', icon: Video, image: '/assets/images/services/service-audiovisual.webp' },
   { id: 'logistics', translationKey: 'logistics', icon: Settings, image: '/assets/images/services/service-logistica.webp' },
-  { id: 'scenography', translationKey: 'scenography', icon: Palette },
+  { id: 'scenography', translationKey: 'scenography', icon: Palette, image: '/assets/images/services/service-cenografia.webp' },
   { id: 'accreditation', translationKey: 'accreditation', icon: BadgeCheck, image: '/assets/images/services/service-credenciamento.webp' },
 ];
