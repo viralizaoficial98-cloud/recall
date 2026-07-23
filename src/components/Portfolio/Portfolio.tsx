@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Expand } from 'lucide-react';
 import { portfolioItems, type PortfolioCategory } from '../../data/portfolio';
 import { useLanguage } from '../../hooks/useLanguage';
-import { staggerContainer, zoomIn, viewportOnce } from '../../utils/motionVariants';
+import { zoomIn, viewportOnce } from '../../utils/motionVariants';
 import SectionHeading from '../SectionHeading/SectionHeading';
 import Lightbox from './Lightbox';
 
@@ -52,14 +52,7 @@ export default function Portfolio() {
           ))}
         </div>
 
-        <motion.div
-          layout
-          variants={staggerContainer(0.06)}
-          initial="hidden"
-          whileInView="visible"
-          viewport={viewportOnce}
-          className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3"
-        >
+        <motion.div layout className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           <AnimatePresence mode="popLayout">
             {visible.map((item, i) => (
               <motion.button
@@ -67,6 +60,10 @@ export default function Portfolio() {
                 layout
                 key={item.id}
                 variants={zoomIn}
+                initial="hidden"
+                whileInView="visible"
+                viewport={viewportOnce}
+                transition={{ delay: (i % 3) * 0.08 }}
                 exit={{ opacity: 0, scale: 0.9 }}
                 onClick={() => setLightboxIndex(i)}
                 className="group relative aspect-[4/3] overflow-hidden rounded-2xl text-left shadow-sm"

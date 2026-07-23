@@ -20,15 +20,27 @@ export default function WorkProcess() {
           className="relative mt-16"
         >
           {/* connecting line: horizontal on desktop, vertical on mobile */}
-          <div className="absolute left-6 top-0 hidden h-full w-px bg-brand-gray-300 sm:block lg:left-0 lg:top-6 lg:h-px lg:w-full" />
+          <div className="absolute left-6 top-0 hidden h-full w-px bg-brand-gray-300 sm:block lg:left-0 lg:top-10 lg:h-px lg:w-full" />
 
           <div className="grid grid-cols-1 gap-10 lg:grid-cols-6 lg:gap-4">
             {processSteps.map((step, i) => {
               const Icon = step.icon;
               return (
                 <motion.div key={step.id} variants={fadeInUp} className="relative flex gap-5 pl-16 sm:pl-16 lg:flex-col lg:items-center lg:gap-0 lg:pl-0 lg:text-center">
-                  <div className="absolute left-0 top-0 flex h-12 w-12 shrink-0 items-center justify-center rounded-full border-2 border-brand-red bg-white text-brand-red shadow-sm lg:static lg:mb-5">
-                    <Icon size={22} strokeWidth={1.8} />
+                  <div className="absolute left-0 top-0 h-12 w-12 shrink-0 overflow-hidden rounded-full border-2 border-white shadow-md lg:relative lg:left-auto lg:top-auto lg:mb-5 lg:h-20 lg:w-20">
+                    <img
+                      src={step.image}
+                      alt=""
+                      aria-hidden="true"
+                      loading="lazy"
+                      decoding="async"
+                      className="h-full w-full object-cover"
+                    />
+                    <div className="absolute inset-0 rounded-full ring-2 ring-inset ring-brand-red/70" />
+                    <div className="absolute -bottom-1 -right-1 flex h-6 w-6 items-center justify-center rounded-full bg-brand-red text-white shadow-sm lg:h-7 lg:w-7">
+                      <Icon size={13} strokeWidth={2} className="lg:hidden" />
+                      <Icon size={15} strokeWidth={2} className="hidden lg:block" />
+                    </div>
                   </div>
                   <div className="lg:px-2">
                     <span className="text-xs font-bold text-brand-red lg:hidden">{`0${i + 1}`}</span>
