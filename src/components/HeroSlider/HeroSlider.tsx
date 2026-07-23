@@ -56,14 +56,24 @@ export default function HeroSlider() {
         {heroSlides.map((slide, index) => (
           <SwiperSlide key={slide.id} className="relative">
             <div className="kenburns absolute inset-0 -z-10" data-swiper-parallax="-30%">
-              <div
-                className="h-full w-full bg-cover bg-center"
-                style={{ backgroundImage: `url(${slide.image})` }}
-                role="img"
-                aria-label={slidesText[index]?.title}
+              <img
+                src={slide.image}
+                alt={slidesText[index]?.title ?? ''}
+                className="h-full w-full object-cover object-center"
+                // @ts-expect-error fetchpriority is a valid HTML attribute not yet in this React version's JSX types
+                fetchpriority={index === 0 ? 'high' : undefined}
+                loading={index === 0 ? undefined : 'lazy'}
+                decoding={index === 0 ? undefined : 'async'}
               />
             </div>
-            <div className="absolute inset-0 bg-gradient-to-b from-black/65 via-black/45 to-black/75" />
+            <div
+              className="absolute inset-0"
+              style={{
+                background:
+                  'linear-gradient(90deg, rgba(0,0,0,0.78) 0%, rgba(0,0,0,0.52) 45%, rgba(0,0,0,0.20) 100%)',
+              }}
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-transparent to-black/25" />
 
             <div className="container-x relative flex h-full items-center">
               {activeIndex === index && (
