@@ -4,14 +4,10 @@ export interface Partner {
   logo: string;
 }
 
-/** Demonstrative partner/client logos — replace with real logos when available. */
 export const partners: Partner[] = [
-  { id: 'pn1', name: 'Nexus Group', logo: '/assets/images/partners/partner-1.png' },
-  { id: 'pn2', name: 'Atlas Holdings', logo: '/assets/images/partners/partner-2.png' },
-  { id: 'pn3', name: 'Orbit Corp', logo: '/assets/images/partners/partner-3.png' },
-  { id: 'pn4', name: 'Vertex Lda', logo: '/assets/images/partners/partner-4.png' },
-  { id: 'pn5', name: 'Prime Partners', logo: '/assets/images/partners/partner-5.png' },
-  { id: 'pn6', name: 'Stellar Inc', logo: '/assets/images/partners/partner-6.png' },
-  { id: 'pn7', name: 'Apex Business', logo: '/assets/images/partners/partner-7.png' },
-  { id: 'pn8', name: 'Horizon Lda', logo: '/assets/images/partners/partner-8.png' },
+  { id: 'pn1', name: 'Sociedade Mineira de Catoca, Lda.', logo: '/assets/images/partners/partner-catoca.webp' },
+  { id: 'pn2', name: 'ENDIAMA — Empresa Nacional de Diamantes de Angola, E.P.', logo: '/assets/images/partners/partner-endiama.webp' },
+  { id: 'pn3', name: 'Ministério das Relações Exteriores de Angola', logo: '/assets/images/partners/partner-mirex.webp' },
+  { id: 'pn4', name: 'FILDA — Feira Internacional de Luanda', logo: '/assets/images/partners/partner-filda.webp' },
+  { id: 'pn5', name: 'ANGOTIC — Angola ICT Forum', logo: '/assets/images/partners/partner-angotic.webp' },
 ];
