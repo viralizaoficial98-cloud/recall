@@ -27,7 +27,8 @@ export default function Partners() {
               src={partner.logo}
               alt={partner.name}
               loading="lazy"
-              className="h-14 w-auto shrink-0 grayscale transition-all duration-300 hover:grayscale-0"
+              decoding="async"
+              className="h-24 w-auto shrink-0 rounded-xl border border-brand-gray-200 bg-white object-contain shadow-sm grayscale transition-all duration-300 hover:grayscale-0"
             />
           ))}
         </div>
