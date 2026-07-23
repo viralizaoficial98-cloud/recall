@@ -51,7 +51,7 @@ export default function CompanyVideo() {
               muted
               loop
               playsInline
-              poster="/assets/images/video-cover.png"
+              poster="/assets/images/video/video-poster.webp"
               onError={() => setVideoAvailable(false)}
             >
               <source src={VIDEO_SRC} type="video/mp4" />
@@ -59,9 +59,10 @@ export default function CompanyVideo() {
           ) : (
             <div className="relative h-full w-full">
               <img
-                src="/assets/images/video-cover.png"
+                src="/assets/images/video/video-poster.webp"
                 alt={t('video.title')}
                 loading="lazy"
+                decoding="async"
                 className="h-full w-full object-cover"
               />
               <div className="absolute inset-0 flex flex-col items-center justify-center gap-3 bg-black/55 px-6 text-center">

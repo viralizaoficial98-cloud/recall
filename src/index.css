@@ -72,7 +72,7 @@
 }
 
 /* Ken Burns effect for hero slider backgrounds */
-.kenburns > div {
+.kenburns img {
   animation: kenburns 16s ease-in-out infinite alternate;
   will-change: transform;
 }
@@ -87,7 +87,7 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .kenburns > div {
+  .kenburns img {
     animation: none;
   }
 }
